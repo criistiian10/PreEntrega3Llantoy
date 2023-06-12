@@ -1,0 +1,18 @@
+.maindeblog {
+    width: 90%;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    background-image: url("../imagenes/fondodeblog.jpg");
+    background-size: cover;
+    border: rgb(0, 0, 0) 1px solid;
+    padding: 30px;
+  }
+  
+  .formulariofans {
+    background-color: $colorbg;
+    color: $colortexto;
+    width: 700px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 40px;
+  }

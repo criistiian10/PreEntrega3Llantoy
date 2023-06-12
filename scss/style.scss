@@ -1,0 +1,1294 @@
+@import "colores";
+@import "blog";
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Yeseva One', cursive;
+  background-color: gray;
+  background-image: url(../imagenes/freddiewembley.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contenedor {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  margin: auto;
+  width: 90%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  .menu {
+    ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    li {
+      padding: 0.7rem;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      padding: 1rem;
+
+      &:hover {
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        transition: all 200ms ease;
+      }
+    }
+  }
+
+  .logoqueen1, .logoqueen img {
+    width: 150px;
+    display: flex;
+  }
+}
+
+.main section {
+  .principal {
+    margin-bottom: 1.2rem;
+
+    img {
+      vertical-align: top;
+      width: 100%;
+    }
+  }
+
+  h2 {
+    padding: 1rem;
+    margin: 15px;
+    text-align: center;
+  }
+
+  p {
+    margin: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+aside {
+  width: 30%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: gray;
+  background-image: url("../imagenes/fondos.jpg");
+  background-size: cover;
+
+  .adicional {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    padding: 0.5rem;
+    background-color: white;
+
+    video {
+      width: 400px;
+    }
+  }
+}
+
+footer {
+  margin: 1rem 0;
+  background-color: black;
+  padding: 1rem;
+  width: 100%;
+  color: gray;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .redesSociales {
+    color: gray;
+    width: 100%;
+    width: 30px;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 15px;
+      color: rgb(255, 255, 255);
+      margin-right: 40px;
+      background-color: rgb(54, 54, 54);
+      text-align: center;
+      border-radius: 90%;
+      transition: all 300ms ease;
+      padding: 15px;
+
+      &:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+      }
+    }
+  }
+}
+
+.fans {
+  padding: 0px 700px;
+}
+
+aside video {
+  width: 450px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.videosqueen video {
+  width: 90%;
+  padding: 1px;
+  border: white 1px outset;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+}
+
+.maintemas {
+  margin: auto;
+  width: 90%;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  background-image: url(../imagenes/fondoqueen.jpg);
+  border: rgb(0, 0, 0) 1.8px outset;
+
+  p {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.712);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  video {
+    border: rgb(0, 0, 0) double 5px;
+    margin: auto;
+    width: 700px;
+  }
+}
+
+.titulotemas {
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.726);
+  width: 100%;
+  padding: 10px;
+}
+
+.videosqueen p {
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+.videosqueenlive {
+  padding: 1rem;
+  display: flex;
+}
+
+.titulodetemas {
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(53, 53, 53, 0.493);
+  border: black 0.5px outset;
+}
+
+section {
+  .titulodelabanda {
+    padding: 10px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .titulodebrian {
+    background-color: rgb(51, 51, 51);
+    width: 10%;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+  }
+}
+
+.parrafobrianmay {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+  overflow: auto;
+  background-color: black;
+}
+
+.parrafobrianmay2 {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+}
+
+.brianparrafos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .fotodemay {
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    border: white 1px solid;
+  }
+}
+
+.maindelabanda {
+  width: 100%;
+  background-color: rgb(53, 53, 53);
+  background-image: url("../imagenes/fondodebiografia.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.freddieparrafos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .fotodefreddie {
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    border: white 1px solid;
+  }
+}
+
+section .titulodefreddie {
+  background-color: rgb(51, 51, 51);
+  width: 10%;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+.parrafomercury, .parrafomercury2, .parraforoger, .parraforoger2 {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+  overflow: auto;
+  background-color: black;
+}
+
+section .tituloderoger {
+  background-color: rgb(51, 51, 51);
+  width: 10%;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+.taylorparrafos {
+  .fotodetaylor {
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    border: white 1px solid;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.parrafodaecon, .parrafdaecon2 {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+  overflow: auto;
+  background-color: black;
+}
+
+section .titulodejohn {
+  background-color: rgb(51, 51, 51);
+  width: 10%;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+.main__sobrelabanda {
+  background-color: rgb(54, 54, 54);
+  background-image: url("../imagenes/queenfoto1000.jpg");
+  background-size: cover;
+  border: black solid 1px;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+
+  img {
+    margin: 0px;
+    border: white 1px solid;
+  }
+
+  p {
+    background-color: rgba(255, 255, 255, 0.726);
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  h5 {
+    background-color: rgba(255, 255, 255, 0.596);
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.containerfreddie, .containermay, .containerroger, .containerjohn {
+  padding: 10px;
+}
+
+.daeconparrafos {
+  .fotodejohn {
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    border: white 1px solid;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.maindeconciertos {
+  width: 90%;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+  background-image: url("../imagenes/conciertoswembley.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  border: black 1px solid;
+}
+
+.titulodeconcierto {
+  height: 10%;
+  padding: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(255, 255, 255);
+  background-color: rgba(85, 85, 85, 0.493);
+  border: black 0.5px outset;
+}
+
+.titulowembley {
+  color: black;
+  background-color: rgba(240, 248, 255, 0.308);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Concierto1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container35 {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.section1 {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.wewillliveaid, .descripcionwembley {
+  width: 520px;
+  padding: 0px;
+  margin: 10px;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+}
+
+.conciertowembley {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  margin: auto;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.521);
+}
+
+.tributeconcert {
+  color: black;
+  background-color: rgba(240, 248, 255, 0.308);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tributeparrafos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.parrafotribute {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  margin: auto;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.521);
+}
+
+.axlyelton {
+  width: 480px;
+  padding: 0px;
+  margin: 10px;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+}
+
+.parrafotribute2 {
+  width: 400px;
+  
+  padding: 0px;
+  margin: 10px;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.521);
+}
+
+.wewillrockyou {
+  width: 400px;
+  padding: 0px;
+  margin: 10px;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+}
+
+.Conciertowembley86 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.conciertowembley862 {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  margin: auto;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.521);
+}
+
+.biografiawembley86 {
+  width: 500px;
+  padding: 0px;
+  margin: 10px;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+}
+
+.descripcionwembley86 {
+  width: 520px;
+  padding: 0px;
+  margin: 10px;
+  line-height: 1.5;
+  border: 1px rgb(255, 255, 255) solid;
+  color: white;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "videobanda1 introduccion1 videobanda2" "videobanda3 introduccion videobanda4" ". . .";
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.introduccion {
+  grid-area: introduccion;
+}
+
+.videobanda3 {
+  grid-area: videobanda3;
+}
+
+.videobanda4 {
+  grid-area: videobanda4;
+}
+
+.videobanda1 {
+  grid-area: videobanda1;
+}
+
+.introduccion1 {
+  grid-area: introduccion1;
+}
+
+.videobanda2 {
+  grid-area: videobanda2;
+}
+
+.fotodemay {
+  width: 400px;
+  height: 400px;
+  padding: 0px;
+  margin: 0px;
+  border: white 1px solid;
+}
+
+.container1 {
+  text-decoration: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.9fr 2fr;
+  grid-template-rows: 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "copyright redes";
+}
+
+.redes {
+  justify-content: space-between;
+  grid-area: redes;
+}
+
+.copyright {
+  grid-area: copyright;
+}
+
+.footer1 {
+  height: 80px;
+  margin: 1rem 0;
+  background-color: black;
+  padding: 1rem;
+  margin: auto;
+  width: 90%;
+  color: gray;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.redes1 {
+  text-align: end;
+  justify-content: space-between;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 15px;
+    color: rgb(255, 255, 255);
+    margin-right: 40px;
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+    border-radius: 90%;
+    transition: all 300ms ease;
+    padding: 15px;
+
+    &:hover {
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+    }
+  }
+}
+
+.titulodetemas {
+  text-align: center;
+}
+
+.mainindex {
+  background-color: rgb(54, 54, 54);
+  background-image: url("../imagenes/queenfondo1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  border: black solid 1px;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+.fotoprincipal {
+  width: 500px;
+  border: black solid 1px;
+  margin: auto;
+}
+
+.descripcionqueen {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 500px;
+  padding: 10px;
+  margin: auto;
+}
+
+.titulodeindex {
+  text-align: center;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  background-color: rgba(53, 53, 53, 0.534);
+  width: 100%;
+  border-radius: 20px;
+}
+
+.videoindex {
+  width: 500px;
+  border: rgb(0, 0, 0) double 5px;
+  margin: auto;
+}
+
+.bohemianfreddie {
+  width: 500px;
+  margin: auto;
+  border: rgba(253, 253, 253, 0.404) 1px solid;
+}
+
+.videosyparrafos {
+  padding: 10px;
+  margin: auto;
+}
+
+.division, .carouseldiv {
+  padding: 20px;
+}
+
+.descripcionbohemian {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.carouseldiv img {
+  border: black 2px solid;
+}
+
+@media screen and (max-width: 665px) {
+  .descripcionqueen {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 350px;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .fotoprincipal {
+    width: 350px;
+    border: black solid 1px;
+    margin: auto;
+  }
+
+  .videoindex {
+    width: 350px;
+    border: rgb(0, 0, 0) double 5px;
+    margin: auto;
+  }
+
+  .mainindex {
+    background-color: rgb(54, 54, 54);
+    background-image: url("../imagenes/queenfondo1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .bohemianfreddie {
+    width: 350px;
+    margin: auto;
+    border: rgba(253, 253, 253, 0.404) 1px solid;
+  }
+
+  .conciertowembley862 {
+    font-size: 13px;
+    width: 380px;
+    height: 280px;
+    padding: 10px;
+    margin: auto;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+
+  .wewillliveaid, .descripcionwembley {
+    width: 380px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+  }
+
+  .biografiawembley86 {
+    width: 380px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+  }
+
+  .descripcionwembley86 {
+    width: 380px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+  }
+
+  .axlyelton {
+    width: 380px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+  }
+
+  .parrafotribute {
+    font-size: 13px;
+    width: 380;
+    height: 280px;
+    padding: 10px;
+    margin: auto;
+    
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+
+  .parrafotribute2 {
+    width: 380px;
+    height: 400px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+
+  .conciertowembley {
+    width: 380px;
+    height: 300px;
+    padding: 10px;
+    margin: auto;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .descripcionqueen {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .fotoprincipal {
+    width: 300px;
+    border: black solid 1px;
+    margin: auto;
+  }
+
+  .videoindex {
+    width: 300px;
+    border: rgb(0, 0, 0) double 5px;
+    margin: auto;
+  }
+
+  .conciertowembley862 {
+    font-size: 11px;
+    width: 280px;
+    height: 280px;
+    padding: 10px;
+    margin: auto;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+
+  .wewillliveaid, .descripcionwembley {
+    width: 280px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+  }
+
+  .biografiawembley86 {
+    width: 280px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+  }
+
+  .descripcionwembley86 {
+    width: 280px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+  }
+
+  .axlyelton {
+    width: 280px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+  }
+
+  .parrafotribute {
+    font-size: 11px;
+    width: 280px;
+    height: 280px;
+    padding: 10px;
+    margin: auto;
+    
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+
+  .parrafotribute2 {
+    width: 280px;
+    height: 400px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+
+  .conciertowembley {
+    font-size: 11px;
+    width: 280px;
+    height: 200px;
+    padding: 10px;
+    margin: auto;
+    line-height: 1.5;
+    border: 1px rgb(255, 255, 255) solid;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .descripcionqueen {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 250px;
+    padding: 10px;
+    margin: auto;
+    font-size: 12px;
+  }
+
+  .fotoprincipal {
+    width: 250px;
+    border: black solid 1px;
+    margin: auto;
+  }
+
+  .videoindex {
+    width: 250px;
+    border: rgb(0, 0, 0) double 5px;
+    margin: auto;
+  }
+
+  .bohemianfreddie {
+    width: 220px;
+    margin: auto;
+    border: rgba(253, 253, 253, 0.404) 1px solid;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .descripcionqueen {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 230px;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .fotoprincipal {
+    width: 230px;
+    border: black solid 1px;
+    margin: auto;
+  }
+
+  .videoindex {
+    width: 230px;
+    border: rgb(0, 0, 0) double 5px;
+    margin: auto;
+  }
+
+  .descripcionbohemian {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    margin: auto;
+    width: 90%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer1 {
+    margin: 1rem 0;
+    background-color: rgb(0, 0, 0);
+    height: 120px;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    color: gray;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+
+    .copyright {
+      margin: auto;
+      padding: 10px;
+    }
+
+    .redes1 {
+      a {
+        margin: auto;
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 15px;
+        color: rgb(255, 255, 255);
+        margin-right: 55px;
+        background-color: rgb(54, 54, 54);
+        text-align: center;
+        border-radius: 90%;
+        transition: all 300ms ease;
+      }
+
+      margin: auto;
+      padding: 10px;
+    }
+  }
+
+  .container1 {
+    text-decoration: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "redes redes" "copyright copyright";
+  }
+
+  .mainindex {
+    background-color: rgb(54, 54, 54);
+    background-image: url("../imagenes/queenfondo1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .descripcionqueen {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  .fotoprincipal {
+    border: black solid 1px;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  .videoindex {
+    border: rgb(0, 0, 0) double 5px;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  .descripcionbohemian {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .carouseldiv img {
+    border-radius: 20px;
+  }
+
+  .formulariofans {
+    background-color: rgba(255, 255, 255, 0.685);
+    color: black;
+    width: 470px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 40px;
+  }
+
+  .main__sobrelabanda img {
+    width: 250px;
+    height: 500px;
+    border-radius: 40px;
+  }
+
+  .main__sobrelabanda div p{
+    border-radius: 50px;
+    padding: 20px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .maintemas video {
+    border: rgb(0, 0, 0) double 5px;
+    margin: auto;
+    width: 500px;
+  }
+  .main__sobrelabanda div p {
+    font-size: 12px;
+  }
+  .main__sobrelabanda img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .maintemas video {
+    border: rgb(0, 0, 0) double 5px;
+    margin: auto;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .footer1 {
+    margin: 1rem 0;
+    background-color: rgb(0, 0, 0);
+    height: 120px;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    color: gray;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+
+    .copyright {
+      margin: auto;
+      padding: 10px;
+    }
+
+    .redes1 {
+      a {
+        margin: auto;
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 15px;
+        color: rgb(255, 255, 255);
+        margin-right: 15px;
+        background-color: rgb(54, 54, 54);
+        text-align: center;
+        border-radius: 90%;
+        transition: all 300ms ease;
+      }
+
+      margin: auto;
+      padding: 10px;
+    }
+  }
+
+  .container1 {
+    text-decoration: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "redes redes" "copyright copyright";
+  }
+
+  .formulariofans {
+    background-color: rgba(255, 255, 255, 0.685);
+    color: black;
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 40px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .footer1 {
+    margin: 1rem 0;
+    background-color: rgb(0, 0, 0);
+    height: 150px;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    color: gray;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+
+    .copyright {
+      margin: auto;
+      padding: 10px;
+    }
+
+    .redes1 {
+      a {
+        margin: auto;
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 15px;
+        color: rgb(255, 255, 255);
+        margin-right: 5px;
+        background-color: rgb(54, 54, 54);
+        text-align: center;
+        border-radius: 90%;
+        transition: all 300ms ease;
+      }
+
+      margin: auto;
+      padding: 10px;
+    }
+  }
+
+  .container1 {
+    text-decoration: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "redes redes" "copyright copyright";
+  }
+}
